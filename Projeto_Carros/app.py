@@ -41,6 +41,14 @@ carros = {
     "Fiat Argo": 94,
     "Hyundai Hb20": 94
 }
+descricoes = {
+    "Volkswagen Gol": "Compacto, econômico e ideal para o dia a dia urbano. O Gol oferece agilidade e baixo consumo de combustível.",
+    "Jeep Renegade": "Robusto e estiloso, o Renegade é perfeito para quem busca aventura com conforto e segurança.",
+    "Chevrolet Onix": "Moderno e tecnológico, o Onix combina conectividade com excelente desempenho na estrada.",
+    "Fiat Argo": "Design arrojado e ótimo custo-benefício para quem busca versatilidade.",
+    "Hyundai Hb20": "Elegante e eficiente, com ótimo espaço interno e conectividade."
+}
+
 opcao = st.sidebar.selectbox("Escolha seu veículo", list(carros.keys()))
 diaria = carros[opcao]
 
@@ -49,6 +57,10 @@ st.header("📋 Detalhes do Aluguel")
 st.image(f"{opcao}.png")
 st.subheader(f"Modelo selecionado: {opcao}")
 st.markdown("🚗🚗🚗")
+
+# 📌 Descrição condicional
+if opcao in descricoes:
+    st.markdown(f"📌 **Descrição:** {descricoes[opcao]}")
 
 # 📥 Entrada de dados
 dias = st.number_input("Quantidade de dias de aluguel", min_value=1, step=1)
