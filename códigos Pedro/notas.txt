@@ -1,0 +1,4 @@
+Nicolas, 10
+Pedro, 10
+Wender, 0
+Daniel, 6.8
