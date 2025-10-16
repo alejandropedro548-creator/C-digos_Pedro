@@ -1,0 +1,10 @@
+salario = 4700
+aluguel = 850
+alimentos =  900
+luz = 100 
+agua = 100
+internet = 85
+gas = 150
+entretenimento = 300
+total_gasto = aluguel+alimentos+luz+agua+internet+gas+entretenimento
+print (f"o que sobrou foi {salario - total_gasto} ")
