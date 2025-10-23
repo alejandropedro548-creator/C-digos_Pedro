@@ -35,18 +35,35 @@ st.markdown("💬 “O atendimento foi excelente e o carro estava impecável. Fi
 marcas = {
     "Volkswagen": {
         "Gol": 79,
+        "Polo": 90,
+        "Saveiro":80,
+        "T-Cross":92,
+        "Virtus":95,
     },
     "Jeep": {
         "Renegade": 80,
+        "Compass":90,
+        "Wrangler":85,
     },
     "Chevrolet": {
         "Onix": 90,
+        "Onix Plus Turbo": 91,
+        "Spin":87,
+        "Tracker":98,
+        "S10":91,
+
     },
     "Fiat": {
         "Argo": 94,
+        "Cronos":90,
+        "Mobi":85,
+        "Pulse":86,
     },
     "Hyundai": {
         "Hb20": 94,
+        "Hb20S": 95,
+        "Ioniq":90,
+        "Creta":95,
     }
 }
 
